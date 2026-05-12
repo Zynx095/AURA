@@ -1,4 +1,4 @@
-# Author: Yukith M Joseph | Atlantic Codes
+# Author: Yukith M Joseph 
 # Purpose: Main application entry point for A.U.R.A backend
 
 import uvicorn
