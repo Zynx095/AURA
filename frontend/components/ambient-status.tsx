@@ -35,26 +35,34 @@ function StatusIndicator({ label, value, delay }: StatusIndicatorProps) {
 }
 
 export function AmbientStatus() {
-  const [time, setTime] = useState(new Date())
+  // Initialize with an empty string to guarantee server and client match on first render
+  const [currentTime, setCurrentTime] = useState("")
 
   useEffect(() => {
-    const interval = setInterval(() => setTime(new Date()), 1000)
+    const updateTime = () => {
+      setCurrentTime(
+        new Date().toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        })
+      )
+    }
+
+    // Set the time immediately once mounted on the client
+    updateTime()
+
+    // Start the interval
+    const interval = setInterval(updateTime, 1000)
     return () => clearInterval(interval)
   }, [])
-
-  const formatTime = (date: Date) => {
-    return date.toLocaleTimeString("en-US", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: false,
-    })
-  }
 
   return (
     <div className="fixed bottom-8 left-8 flex flex-col gap-2 z-10">
       <StatusIndicator label="Neural" value="Active" delay={2000} />
-      <StatusIndicator label="Sync" value={formatTime(time)} delay={2200} />
+      {/* currentTime will safely populate on the client side without hydration errors */}
+      <StatusIndicator label="Sync" value={currentTime} delay={2200} />
       <StatusIndicator label="Latency" value="12ms" delay={2400} />
     </div>
   )

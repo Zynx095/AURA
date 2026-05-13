@@ -45,14 +45,14 @@ export function OrganicBlob({ className = "" }: { className?: string }) {
           </feMerge>
         </filter>
         <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#00d4ff" stopOpacity="0.8" />
-          <stop offset="50%" stopColor="#ff00d4" stopOpacity="0.6" />
-          <stop offset="100%" stopColor="#00ff88" stopOpacity="0.8" />
+          <stop offset="0%" stopColor="#00d4ff" stopOpacity="0.28" />
+          <stop offset="50%" stopColor="#ff00d4" stopOpacity="0.18" />
+          <stop offset="100%" stopColor="#00ff88" stopOpacity="0.28" />
         </linearGradient>
         <linearGradient id="gradient2" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#ff00d4" stopOpacity="0.6" />
-          <stop offset="50%" stopColor="#00d4ff" stopOpacity="0.4" />
-          <stop offset="100%" stopColor="#ffaa00" stopOpacity="0.6" />
+          <stop offset="0%" stopColor="#ff00d4" stopOpacity="0.18" />
+          <stop offset="50%" stopColor="#00d4ff" stopOpacity="0.16" />
+          <stop offset="100%" stopColor="#ffaa00" stopOpacity="0.18" />
         </linearGradient>
       </defs>
       

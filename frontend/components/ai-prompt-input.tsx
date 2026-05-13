@@ -78,7 +78,7 @@ export function AIPromptInput() {
       
       {/* Floating suggestion pills */}
       <div className="flex flex-wrap gap-2 mt-4 justify-center">
-        {["Create something", "Explain concepts", "Generate ideas", "Analyze data"].map((suggestion, i) => (
+        {[""].map((suggestion, i) => (
           <button
             key={i}
             type="button"

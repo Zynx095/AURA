@@ -61,10 +61,10 @@ function NeuralNode({ icon, label, delay, active, onClick }: NeuralNodeProps) {
 }
 
 const nodes = [
-  { icon: <Brain className="w-6 h-6" />, label: "Neural Processing" },
-  { icon: <Waves className="w-6 h-6" />, label: "Fluid Dynamics" },
-  { icon: <Sparkles className="w-6 h-6" />, label: "Generative AI" },
-  { icon: <Zap className="w-6 h-6" />, label: "Real-time Sync" },
+  { icon: <Brain className="w-6 h-6" />, label: "" },
+  { icon: <Waves className="w-6 h-6" />, label: "" },
+  { icon: <Sparkles className="w-6 h-6" />, label: "" },
+  { icon: <Zap className="w-6 h-6" />, label: "" },
 ]
 
 export function NeuralGrid() {

@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react"
 
-const menuItems = ["Explore", "Create", "Learn", "Connect"]
+const navItems = [
+  "A.U.R.A"
+]
 
 export function FloatingNav() {
   const [visible, setVisible] = useState(false)
@@ -22,7 +24,7 @@ export function FloatingNav() {
       `}
     >
       <div className="flex items-center gap-1 p-1.5 rounded-full bg-card/30 backdrop-blur-xl border border-border/20">
-        {menuItems.map((item, i) => (
+        {navItems.map((item, i) => (
           <button
             key={i}
             onClick={() => setActiveItem(activeItem === i ? null : i)}
@@ -33,6 +35,7 @@ export function FloatingNav() {
                 : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
               }
             `}
+            type="button"
           >
             {item}
           </button>
