@@ -1,0 +1,713 @@
+# PRANATHI's WORK
+
+# A.U.R.A Project Onboarding + Full System Guide
+
+## Project Name
+
+A.U.R.A
+
+Autonomous Unified Recognition Assistant
+
+Built by:
+Yukith Joseph + Pranathi
+
+---
+
+# WHAT A.U.R.A ACTUALLY IS
+
+A.U.R.A is a real-time AI surveillance and intelligence system.
+
+It is NOT just a website.
+
+It is an AI operating system style platform that:
+
+• Reads live camera feeds
+• Detects people, vehicles, and objects using YOLOv8
+• Tracks objects across time
+• Detects suspicious behavior
+• Generates AI narration
+• Streams updates in real-time using WebSockets
+• Displays everything inside a futuristic intelligence dashboard
+
+The system is split into:
+
+## FRONTEND
+
+Visual interface.
+Built using:
+
+• Next.js
+• React
+• TailwindCSS
+• TypeScript
+
+The frontend handles:
+
+• UI
+• AI dashboard
+• Live surveillance page
+• Intelligence panels
+• Realtime event feed
+• Neural particles
+• Ambient AI visuals
+
+---
+
+## BACKEND
+
+AI processing system.
+Built using:
+
+• Python
+• FastAPI
+• YOLOv8
+• OpenCV
+• WebSockets
+
+The backend handles:
+
+• Camera access
+• Object detection
+• Tracking
+• Suspicious activity detection
+• Narration
+• Realtime streaming
+
+---
+
+# WHAT HAS BEEN BUILT SO FAR
+
+## FRONTEND FEATURES
+
+### Main AI Landing Page
+
+A futuristic AI operating system style homepage with:
+
+• Neural particle animations
+• Ambient glowing orb
+• Floating intelligence visuals
+• AI dashboard aesthetic
+• White minimal futuristic theme
+
+---
+
+### Surveillance Dashboard
+
+A full live monitoring page that includes:
+
+• Live webcam feed
+• YOLO object detection
+• AI Event Feed
+• Tracking Intelligence panel
+• Real-time updates
+• Realtime WebSocket streaming
+
+---
+
+### Realtime Intelligence System
+
+The UI updates live without refreshing.
+
+This is done using:
+
+WebSockets.
+
+Instead of repeatedly requesting data every second, the backend PUSHES live updates directly to the frontend.
+
+---
+
+# BACKEND FEATURES
+
+## YOLO Detection Engine
+
+The system uses:
+
+YOLOv8n.pt
+
+This model detects:
+
+• Person
+• Car
+• Phone
+• Laptop
+• Bicycle
+• And many more objects
+
+---
+
+## Object Tracking
+
+A.U.R.A remembers objects over time.
+
+Example:
+
+Person #4 detected for 38 seconds.
+
+This allows the AI to understand persistence and movement.
+
+---
+
+## Event Engine
+
+The system can detect behaviors.
+
+Currently implemented:
+
+• Loitering
+• Stationary vehicles
+• Restricted zone entry
+
+---
+
+## Zone Intelligence
+
+A.U.R.A understands physical areas.
+
+Example:
+
+If a person enters a restricted region:
+
+"Restricted zone entry detected."
+
+---
+
+## Narration System
+
+The backend generates AI summaries such as:
+
+• "2 active objects currently monitored"
+• "Suspicious prolonged presence detected"
+• "1 individual present in the scene"
+
+---
+
+## Realtime Streaming
+
+Everything is streamed live using:
+
+WebSockets
+
+This creates instant updates across the UI.
+
+---
+
+# FULL PROJECT ARCHITECTURE
+
+A.U.R.A/
+│
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── styles/
+│   └── surveillance/
+│
+├── backend/
+│   ├── camera.py
+│   ├── yolo_engine.py
+│   ├── tracker.py
+│   ├── narrator.py
+│   ├── event_engine.py
+│   ├── socket_manager.py
+│   ├── zone_engine.py
+│   ├── main.py
+│   └── models/
+│       └── yolov8n.pt
+│
+└── PRANATHI's WORK/
+
+---
+
+# EXPLANATION OF EVERY BACKEND FILE
+
+## camera.py
+
+Handles webcam access.
+
+Reads camera frames using OpenCV.
+
+---
+
+## yolo_engine.py
+
+Loads YOLO model.
+
+Runs object detection.
+
+Returns:
+
+• Labels
+• Confidence
+• Bounding boxes
+• Tracking IDs
+
+---
+
+## tracker.py
+
+Stores object memory.
+
+Tracks:
+
+• First seen
+• Last seen
+• Duration
+• Confidence
+• Object box positions
+
+---
+
+## event_engine.py
+
+Analyzes suspicious behavior.
+
+Detects:
+
+• Loitering
+• Long presence
+• Stationary objects
+
+---
+
+## narrator.py
+
+Creates AI-generated scene summaries.
+
+Turns detections into readable narration.
+
+---
+
+## zone_engine.py
+
+Checks if objects enter specific regions.
+
+Used for:
+
+• Restricted zones
+• Danger zones
+• Intrusion detection
+
+---
+
+## socket_manager.py
+
+Handles WebSocket realtime communication.
+
+Streams live intelligence to frontend.
+
+---
+
+## main.py
+
+Main FastAPI server.
+
+Controls:
+
+• API routes
+• WebSockets
+• Video streaming
+• Detection pipeline
+
+---
+
+# WHAT PRANATHI CAN WORK ON NEXT
+
+## IMPORTANT
+
+You do NOT need advanced coding knowledge immediately.
+
+You can use:
+
+• ChatGPT
+• Gemini
+
+for assistance.
+
+The goal is:
+
+Learn while improving A.U.R.A.
+
+---
+
+# BEST THINGS TO WORK ON NEXT
+
+## 1. Frontend UI Improvements
+
+You can improve:
+
+• AI assistant panel
+• Smooth animations
+• Better alert cards
+• Better layouts
+• Better colors
+• Cinematic transitions
+• Realtime animations
+
+This is the easiest and most visual part.
+
+---
+
+## 2. Zone Visualization
+
+Draw visual overlays on camera feed.
+
+Examples:
+
+• Red danger zones
+• Restricted area outlines
+• AI heatmaps
+
+---
+
+## 3. AI Voice Assistant
+
+Later you can add:
+
+• Voice narration
+• AI speech
+• Voice commands
+
+Suggested tools:
+
+• Faster-Whisper
+• Piper TTS
+
+---
+
+## 4. AI Alerts
+
+Add:
+
+• Sound alerts
+• Popup warnings
+• Threat severity system
+
+---
+
+## 5. Analytics Dashboard
+
+Add:
+
+• Charts
+• Detection history
+• Threat statistics
+• Realtime graphs
+
+---
+
+# HOW TO USE VS CODE
+
+## WHAT IS VS CODE?
+
+VS Code is the main coding software used for this project.
+
+It is where:
+
+• Files are edited
+• Terminal is opened
+• Backend runs
+• Frontend runs
+
+---
+
+# HOW TO OPEN PROJECT
+
+## STEP 1
+
+Open VS Code.
+
+---
+
+## STEP 2
+
+Click:
+
+File → Open Folder
+
+---
+
+## STEP 3
+
+Select:
+
+A.U.R.A folder
+
+---
+
+# HOW TO OPEN TERMINAL
+
+Inside VS Code:
+
+Press:
+
+CTRL + `
+
+OR:
+
+Terminal → New Terminal
+
+This opens CMD/PowerShell inside VS Code.
+
+---
+
+# HOW TO RUN FRONTEND
+
+Inside terminal:
+
+cd frontend
+npm run dev
+
+Then open:
+
+[http://localhost:3000](http://localhost:3000)
+
+---
+
+# HOW TO RUN BACKEND
+
+Open NEW terminal.
+
+Run:
+
+cd backend
+uvicorn main:app --reload
+
+Then backend runs at:
+
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+# IMPORTANT
+
+Frontend and backend BOTH must run at same time.
+
+Two terminals are required.
+
+---
+
+# HOW TO DOWNLOAD EVERYTHING FROM GITHUB
+
+## STEP 1
+
+Install Git.
+
+Download:
+
+[https://git-scm.com/](https://git-scm.com/)
+
+Install normally.
+
+---
+
+## STEP 2
+
+Open terminal.
+
+---
+
+## STEP 3
+
+Run:
+
+git clone YOUR_GITHUB_REPO_LINK
+
+Example:
+
+git clone [https://github.com/username/AURA.git](https://github.com/username/AURA.git)
+
+---
+
+## STEP 4
+
+Open cloned folder in VS Code.
+
+---
+
+# HOW TO INSTALL FRONTEND REQUIREMENTS
+
+Inside terminal:
+
+cd frontend
+npm install
+
+This installs:
+
+• React
+• Next.js
+• TailwindCSS
+• All frontend dependencies
+
+---
+
+# HOW TO INSTALL BACKEND REQUIREMENTS
+
+## STEP 1
+
+Open backend folder.
+
+cd backend
+
+---
+
+## STEP 2
+
+Create virtual environment.
+
+python -m venv venv
+
+---
+
+## STEP 3
+
+Activate virtual environment.
+
+On Windows:
+
+venv\Scripts\activate
+
+---
+
+## STEP 4
+
+Install backend dependencies.
+
+pip install ultralytics opencv-python fastapi uvicorn pillow numpy websockets
+
+---
+
+# HOW TO ADD YOLO MODEL
+
+Download:
+
+yolov8n.pt
+
+Place it inside:
+
+backend/models/
+
+---
+
+# MASTER CHATGPT PROMPT FOR PRANATHI
+
+You are helping develop A.U.R.A (Autonomous Unified Recognition Assistant), a futuristic real-time AI surveillance and intelligence operating system.
+
+The project stack is:
+
+Frontend:
+• Next.js
+• React
+• TailwindCSS
+• TypeScript
+
+Backend:
+• Python
+• FastAPI
+• YOLOv8
+• OpenCV
+• WebSockets
+
+The system already includes:
+
+• Live surveillance feed
+• YOLO object detection
+• Object tracking
+• Event detection
+• AI narration
+• Realtime WebSocket updates
+• AI dashboard UI
+• Zone intelligence
+
+Your job:
+
+• Improve UI/UX
+• Add new frontend features
+• Keep architecture modular
+• Never break existing backend routes
+• Never rename API endpoints
+• Maintain realtime functionality
+• Keep code clean and reusable
+
+Focus on:
+
+• Ambient AI aesthetics
+• Smooth realtime interfaces
+• Premium futuristic design
+• Surveillance intelligence systems
+• AI assistant interactions
+
+Always explain where files should go.
+Always explain what code changes do.
+Always preserve current project architecture.
+
+---
+
+# HOW TO ASK CHATGPT OR GEMINI FOR HELP
+
+Good example:
+
+"Help me improve the AI Event Feed UI in my Next.js surveillance dashboard. Keep the current architecture and make it more cinematic."
+
+Bad example:
+
+"Make AI app"
+
+Specific prompts get MUCH better results.
+
+---
+
+# IMPORTANT DEVELOPMENT RULES
+
+• Never delete random files
+• Never rename backend routes
+• Always test after changes
+• Keep frontend and backend separated
+• Push changes to Git frequently
+• Use GitHub as backup
+
+---
+
+# CURRENT SYSTEM STATUS
+
+A.U.R.A currently supports:
+
+✅ Realtime surveillance
+✅ YOLO detection
+✅ Object tracking
+✅ Suspicious activity detection
+✅ AI narration
+✅ Zone intelligence
+✅ Realtime WebSockets
+✅ Intelligence dashboard
+
+---
+
+# FUTURE GOALS
+
+Possible future upgrades:
+
+• Face recognition
+• License plate detection
+• Threat prediction
+• Voice assistant
+• Multi-camera system
+• Heatmaps
+• Analytics graphs
+• AI-generated reports
+• Emotion detection
+• Gesture recognition
+
+---
+
+# FINAL NOTE
+
+A.U.R.A is not just a project.
+
+It is being built like a real AI intelligence platform.
+
+The goal is:
+
+Create something cinematic, intelligent, futuristic, and genuinely useful.
+
+And most importantly:
+
+Build it together.
